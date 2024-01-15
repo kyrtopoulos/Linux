@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Telegram IP Notifier
+# This script send message to your Telegram Bot every time lan IP changes. It's usefull when you have a service running on a host with dynamic IP and you want to know easily what IP has.
+# You must set a cron job to run e.g. every 1 minute.
+
 # Telegram Bot API Token
 TELEGRAM_BOT_TOKEN="YOUR_TELEGRAM_BOT_TOKEN"
 
@@ -7,7 +11,7 @@ TELEGRAM_BOT_TOKEN="YOUR_TELEGRAM_BOT_TOKEN"
 TELEGRAM_CHAT_ID="YOUR_TELEGRAM_CHAT_ID"
 
 # Path to a file to store the previous LAN IP
-PREVIOUS_IP_FILE="/home/ph03n1x/scripts/previous_ip.txt"
+PREVIOUS_IP_FILE="/path/previous_ip.txt"
 
 # Get the current LAN IP and hostname
 CURRENT_IP=$(hostname -I | awk '{print $1}')
