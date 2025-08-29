@@ -1,0 +1,395 @@
+# ==============================================================================
+# Enhanced .gitignore for Windows/Linux Scripts Repository
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Windows System Files
+# ------------------------------------------------------------------------------
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.url
+
+# ------------------------------------------------------------------------------
+# PowerShell & Scripts
+# ------------------------------------------------------------------------------
+# PowerShell history
+*.pshistory
+ConsoleHost_history.txt
+Microsoft.PowerShell_profile.ps1
+
+# PowerShell modules (if downloaded locally)
+Modules/
+PSModules/
+
+# PowerShell transcripts
+PowerShell_transcript.*
+
+# Script execution logs
+*.out
+execution_*.txt
+
+# PowerShell credentials (SECURITY CRITICAL)
+*.credential
+*.cred
+*password*
+*passwd*
+credential.xml
+creds.xml
+
+# Windows Registry exports (may contain sensitive data)
+*.reg
+
+# ------------------------------------------------------------------------------
+# Environment & Configuration Files (SECURITY CRITICAL)
+# ------------------------------------------------------------------------------
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+.env.test
+*.env
+
+# Configuration files with sensitive data
+config.json
+settings.json
+credentials.json
+secrets.json
+*.config
+appsettings.json
+appsettings.*.json
+
+# API keys and tokens
+apikeys.txt
+tokens.txt
+*.key
+*.pem
+*.p12
+*.pfx
+
+# SSH keys and certificates (CRITICAL SECURITY)
+id_rsa
+id_rsa.pub
+id_dsa
+id_dsa.pub
+id_ecdsa
+id_ecdsa.pub
+id_ed25519
+id_ed25519.pub
+*.ppk
+known_hosts
+authorized_keys
+ssh_config
+sshd_config
+
+# TLS/SSL certificates
+*.crt
+*.cert
+*.cer
+*.der
+*.csr
+*.p7b
+*.p7c
+*.p7s
+
+# GPG keys
+*.gpg
+*.asc
+secring.*
+pubring.*
+trustdb.gpg
+*.sig
+
+# Cloud provider credentials
+.aws/
+.azure/
+.gcloud/
+gcloud/
+credentials
+.boto
+.s3cfg
+
+# Docker secrets
+.dockercfg
+.docker/config.json
+
+# ------------------------------------------------------------------------------
+# Development Tools & IDEs
+# ------------------------------------------------------------------------------
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Notepad++
+*.npp
+
+# ------------------------------------------------------------------------------
+# Version Control & Git
+# ------------------------------------------------------------------------------
+# Git patches
+*.patch
+*.diff
+
+# ------------------------------------------------------------------------------
+# Backup & Temporary Files
+# ------------------------------------------------------------------------------
+# Backup files
+*.bak
+*.backup
+*.old
+*_backup
+*_old
+
+# Temporary files
+*.temp
+*.autosave
+
+# Windows temp
+*.tmp
+~$*
+
+# ------------------------------------------------------------------------------
+# Archives & Compressed Files (Optional - depends on your needs)
+# ------------------------------------------------------------------------------
+# Uncomment if you don't want to track archives
+# *.zip
+# *.rar
+# *.7z
+# *.tar
+# *.gz
+
+# ------------------------------------------------------------------------------
+# Logs & Output
+# ------------------------------------------------------------------------------
+logs/
+*.log
+*.log.*
+debug.log
+error.log
+access.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ------------------------------------------------------------------------------
+# Testing & Coverage
+# ------------------------------------------------------------------------------
+# Pester test results
+TestResults.xml
+*.trx
+
+# Coverage reports
+coverage/
+*.coverage
+
+# ------------------------------------------------------------------------------
+# Documentation Build Output
+# ------------------------------------------------------------------------------
+_site/
+out/
+dist/
+build/
+
+# ------------------------------------------------------------------------------
+# Node.js (if ever used for tooling)
+# ------------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# ------------------------------------------------------------------------------
+# Python (if ever used)
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ------------------------------------------------------------------------------
+# Database Files
+# ------------------------------------------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+*.mdb
+
+# ------------------------------------------------------------------------------
+# OS-Specific (Linux/Mac support)
+# ------------------------------------------------------------------------------
+# Linux
+*~
+.directory
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# ------------------------------------------------------------------------------
+# Custom Application Data
+# ------------------------------------------------------------------------------
+# Add your specific patterns here
+# Example: MyApp-specific files
+# MyApp_cache/
+# *.myapp
+
+# ------------------------------------------------------------------------------
+# Additional Security & Development Tools
+# ------------------------------------------------------------------------------
+# Git secrets configuration
+.gitsecrets
+
+# Pre-commit hooks
+.pre-commit-config.yaml
+
+# Security scanners output
+.bandit
+.safety
+security-report.*
+vulnerability-report.*
+
+# Package managers security
+package-lock.json.audit
+yarn-audit.json
+
+# ------------------------------------------------------------------------------
+# Shell & Command Line History (ALL PLATFORMS)
+# ------------------------------------------------------------------------------
+# Bash history
+.bash_history
+.bashrc.local
+.bash_profile.local
+
+# Zsh history
+.zsh_history
+.zshrc.local
+
+# Fish shell
+.config/fish/fish_history
+
+# Command history
+.history
+history.txt
+
+# ------------------------------------------------------------------------------
+# Network & System Configuration
+# ------------------------------------------------------------------------------
+# Network configurations
+*.pcap
+*.cap
+wireshark/
+
+# System dumps
+*.dmp
+*.dump
+core.*
+crash.*
+
+# Firewall rules
+iptables.rules
+pf.conf
+
+# ------------------------------------------------------------------------------
+# Backup & Recovery Files
+# ------------------------------------------------------------------------------
+# System backups
+*.ghost
+*.img
+*.iso.backup
+
+# Database backups
+*.sql.bak
+*.db.bak
+backup_*.sql
+
+# Configuration backups
+*.conf.bak
+*.cfg.bak
+*.ini.bak
+
+# ------------------------------------------------------------------------------
+# Temporary & Cache Directories
+# ------------------------------------------------------------------------------
+# Generic temp/cache
+tmp/
+temp/
+cache/
+.cache/
+.tmp/
+
+# Application caches
+*_cache/
+.sass-cache/
+.pytest_cache/
+
+# ------------------------------------------------------------------------------
+# IDE & Editor Specific Files
+# ------------------------------------------------------------------------------
+# Vim
+*.swp
+*.swo
+.vimrc.local
+Session.vim
+
+# Emacs
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Nano
+*.save
+
+# ------------------------------------------------------------------------------
+# Documentation & Help Files (Optional)
+# ------------------------------------------------------------------------------
+# Compiled help files
+*.chm
+*.hlp
+
+# Documentation builds
+docs/_build/
+site/
+mkdocs/
